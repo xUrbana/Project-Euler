@@ -16,9 +16,6 @@ def euler35():
             circular_primes += 1
     
     return circular_primes
-
-
-print(euler35())
     
 
 
