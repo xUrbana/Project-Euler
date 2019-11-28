@@ -1,3 +1,5 @@
-from . import helpers
+from . import primes
+from . import fibonacci
+from . import string
 
-__all__ = ['helpers']
+__all__ = ['primes', 'fibonacci', 'string']

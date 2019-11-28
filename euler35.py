@@ -1,4 +1,5 @@
-from euler.helpers import iterprimes, rotations, is_prime
+from euler.primes import iterprimes, is_prime
+from euler.string import rotations
 
 def euler35():
     '''

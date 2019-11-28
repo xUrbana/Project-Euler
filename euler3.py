@@ -1,4 +1,4 @@
-from euler.helpers import prime_factorize
+from euler.primes import prime_factorize
 
 def euler3():
     '''

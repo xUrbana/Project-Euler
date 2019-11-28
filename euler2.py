@@ -1,4 +1,4 @@
-from euler.helpers import fibs
+from euler.fibonacci import iterfibs
 
 def euler2():
     '''
@@ -9,7 +9,7 @@ def euler2():
     By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
     '''
     sum_fibs = 0
-    for fib in fibs():
+    for fib in iterfibs():
         if fib > 4000000:
             break
 
