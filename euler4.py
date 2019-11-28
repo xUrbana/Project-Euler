@@ -1,4 +1,5 @@
 from euler.string import palindrome
+from euler.timing import timed
 import itertools
 
 def euler4():
