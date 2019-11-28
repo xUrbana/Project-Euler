@@ -21,8 +21,21 @@ def iterprimes():
         if is_prime(i):
             yield i
 
-def rotations(s: str):
+def rotations(s):
     # We can find all rotations by appending the string to itself
     ss = s + s
     for i in range(len(s)):
         yield ss[i:i+len(s)]
+
+def fibs():
+    a = 1
+    b = 1
+    yield a
+    yield b
+
+    while True:
+        c = a + b
+        yield c
+        a = b
+        b = c
+    
