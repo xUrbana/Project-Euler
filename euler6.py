@@ -1,4 +1,4 @@
-from euler.summations import sum_of_squares, sum_of_naturals
+from euler.series import sum_of_squares, sum_of_naturals
 
 def euler6():
     '''
