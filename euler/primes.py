@@ -21,7 +21,6 @@ def iterprimes():
         if is_prime(i):
             yield i
 
-
 def prime_factorize(n):
     if n == 1:
         raise ValueError('1 has no prime factors')
@@ -36,3 +35,6 @@ def prime_factorize(n):
             yield d
             n /= d
         d += 1
+
+def nth_prime(n):
+    return next(itertools.islice(iterprimes(), n-1, n))
