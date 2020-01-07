@@ -11,5 +11,3 @@ def euler22():
         return sum(ord(c) - 64 for c in name)
 
     return sum((i+1)*name_score(name) for i,name in enumerate(names))
-
-print(euler22())
