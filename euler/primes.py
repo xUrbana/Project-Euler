@@ -2,9 +2,7 @@ import math
 import itertools
 
 def is_prime(n):
-
-    if isinstance(n, str):
-        n = int(n)
+    n = int(n)
 
     if n == 1: return False
     if n == 2: return True
