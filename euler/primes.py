@@ -19,6 +19,9 @@ def iterprimes():
         if is_prime(i):
             yield i
 
+def nprimes(n):
+    return itertools.islice(iterprimes(), n)
+
 def prime_factorize(n):
     if n == 1:
         raise ValueError('1 has no prime factors')
