@@ -15,7 +15,7 @@ def is_prime(n):
     return True
 
 def iterprimes():
-    for i in itertools.count(2):
+    for i in itertools.count(start=2):
         if is_prime(i):
             yield i
 
