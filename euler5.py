@@ -7,5 +7,5 @@ def euler5():
     What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
     '''
     for n in itertools.count(start=20, step=20):
-        if all(n % i == 0 for i in range(1, 21)):
+        if all(n % i == 0 for i in range(11, 20)):
             return n
