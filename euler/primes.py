@@ -8,11 +8,7 @@ def is_prime(n):
     if n == 2: return True
     if n % 2 == 0: return False
 
-    for i in range(3, math.ceil(math.sqrt(n)) + 1, 2):
-        if n % i == 0:
-            return False
-
-    return True
+    return not any(n % i == 0 for i in ange(3, math.ceil(math.sqrt(n)) + 1, 2))
 
 def iterprimes():
     for i in itertools.count(start=2):
