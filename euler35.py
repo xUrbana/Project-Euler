@@ -1,4 +1,4 @@
-from euler.primes import iterprimes, is_prime
+from euler.integer import iterprimes, is_prime
 from euler.string import rotations
 
 def euler35():

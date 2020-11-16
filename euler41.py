@@ -1,4 +1,4 @@
-from euler.primes import iterprimes
+from euler.integer import iterprimes
 from euler.string import pandigital
 import itertools
 
