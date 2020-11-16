@@ -23,14 +23,13 @@ def nprimes(n):
 
 def prime_factorize(n):
     """Yields the prime factors of n."""
-    if n == 1:
-        raise ValueError('1 has no prime factors')
-
     if n < 0:
         n = -n
+
+    if n == 1:
+        raise ValueError('1 has no prime factors')
     
     d = 2
-
     while n > 1:
         while n % d == 0:
             yield d
