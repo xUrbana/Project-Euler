@@ -2,6 +2,7 @@ import math
 import itertools
 
 def is_prime(n):
+    """Return true if n is prime, otherwise false."""
     n = int(n)
 
     if n == 1: return False
@@ -11,14 +12,17 @@ def is_prime(n):
     return not any(n % i == 0 for i in range(3, math.ceil(math.sqrt(n)) + 1, 2))
 
 def iterprimes():
+    """Yields primes one by one."""
     for i in itertools.count(start=2):
         if is_prime(i):
             yield i
 
 def nprimes(n):
+    """The first n primes."""
     return itertools.islice(iterprimes(), n)
 
 def prime_factorize(n):
+    """Yields the prime factors of n."""
     if n == 1:
         raise ValueError('1 has no prime factors')
 
@@ -34,4 +38,5 @@ def prime_factorize(n):
         d += 1
 
 def nth_prime(n):
+    """The nth prime number."""
     return next(itertools.islice(iterprimes(), n-1, n))

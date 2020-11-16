@@ -1,5 +1,6 @@
 
 def iterfibs():
+    """Yields the fibonacci numbers."""
     a = 1
     b = 1
     yield a

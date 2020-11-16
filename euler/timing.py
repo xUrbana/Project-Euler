@@ -1,8 +1,8 @@
 import time
 import functools
 
-# Crude timing decorator for functions
 def timed(func):
+    """Decorator that prints the elapsed time the wrapped function takes."""
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         s = time.time()
